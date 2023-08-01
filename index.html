@@ -1,0 +1,19 @@
+<html>
+<script>
+function showClock()
+{
+mydate=new Date();
+h=mydate.getHours();
+m=mydate.getMinutes();
+s=mydate.getSeconds();
+tm=h+":"+m+":"+s;
+document.form1.t1.value=tm;
+}
+</script>
+<title>Date and Time Example</title>
+<body onLoad=setInterval("showClock()",1000)>
+<form name=form1>
+<input type=text name=t1 value="">
+</form>
+</body>
+</html>
